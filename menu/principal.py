@@ -2,6 +2,9 @@ from Ejercicios.ejercicio1 import ejercicio_1
 from Ejercicios.ejercicio2 import ejercicio_2
 from Ejercicios.ejercicio3 import ejercicio_3
 from Ejercicios.ejercicio4 import ejercicio_4
+from poo.clases.ejercicio1_poo import Ejercicio1
+from poo.clases.ejercicio2_poo import Ejercicio2
+
 
 def menu_principal():
     while True:
@@ -14,9 +17,18 @@ def menu_principal():
         op=int(input("Eliga una opción: "))
         match(op):
             case 1:
-                ejercicio_1()
+                #ejercicio_1()
+                test = Ejercicio1()
+                test.leerDatos()
+                test.realizarCalculo()
+                test.mostrarResultado()
+
             case 2:
-                ejercicio_2()
+                #ejercicio_2()
+                test = Ejercicio2()
+                test.leerDatos()
+                test.realizarCalculo()
+
             case 3:
                 ejercicio_3()
             case 4:
