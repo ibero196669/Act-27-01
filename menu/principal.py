@@ -4,7 +4,8 @@ from Ejercicios.ejercicio3 import ejercicio_3
 from Ejercicios.ejercicio4 import ejercicio_4
 from poo.clases.ejercicio1_poo import Ejercicio1
 from poo.clases.ejercicio2_poo import Ejercicio2
-
+from poo.clases.ejercicio3_poo import Ejercicio3
+from poo.clases.ejercicio4_poo import Ejercicio4
 
 def menu_principal():
     while True:
@@ -30,9 +31,17 @@ def menu_principal():
                 test.realizarCalculo()
 
             case 3:
-                ejercicio_3()
+                #ejercicio_3()
+                test = Ejercicio3()
+                test.leerDatos()
+                test.adivinarpalabra()
             case 4:
-                ejercicio_4()
+                #ejercicio_4()
+                test = Ejercicio4()
+                test.leerDatos()
+                test.realizarCalculo()
+                test.mostrarResultado()
+
             case 5:
                 break
             case _:
